@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7647001424517746422}
   m_Layer: 0
   m_Name: spider_life
-  m_TagString: Untagged
+  m_TagString: Life
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
