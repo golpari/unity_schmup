@@ -35,5 +35,10 @@ public class SineWaveMovement : MonoBehaviour
 
         // Apply the sine wave as a vertical offset
         rb.velocity = new Vector3(startVelocity.x, sineWaveOffset, startVelocity.z);
+
+        if (this.transform.position.x <= -14)
+        {
+            this.transform.position = new Vector2(14f, this.transform.position.y);
+        }
     }
 }

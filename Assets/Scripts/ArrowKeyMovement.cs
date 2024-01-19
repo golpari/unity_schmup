@@ -5,10 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class ArrowKeyMovement : MonoBehaviour
 {
+    public AudioClip startAudio;
+
     public float movement_speed = 4;
     private Rigidbody2D rb;
     private Transform tf;
 
+    private void Awake()
+    {
+        // Play sound effect at the location of the main camera
+        AudioSource.PlayClipAtPoint(startAudio, Camera.main.transform.position);
+    }
     // Start is called before the first frame update
     void Start()
     {

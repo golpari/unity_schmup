@@ -9,6 +9,8 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
+    public AudioClip shootAudio;
+
     public GameObject desiredProjectile;
     public bool shootOnPress = true; //default value is true, can add functionality for automatically shot enemy projectiles if setting is 'false' though
 
@@ -28,6 +30,8 @@ public class Shoot : MonoBehaviour
         { 
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                // Play sound effect at the location of the main camera
+                AudioSource.PlayClipAtPoint(shootAudio, Camera.main.transform.position, 5);
                 Instantiate(desiredProjectile, this.transform.position + Vector3.right, Quaternion.identity);
             }
         }

@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc7626dd712ef84181641e5e907b7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hurtAudio: {fileID: 8300000, guid: 623d36c78ed885a4daf190ef347a55b8, type: 3}
   currentHealth: 3
   lostLife: 0
 --- !u!114 &3316378920302524009
@@ -115,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e10cd99fd7c5ff41b38a13526794440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootAudio: {fileID: 8300000, guid: a2b7b1b4f98531e4cbe9798f35b982bf, type: 3}
   desiredProjectile: {fileID: 2640727809509795989, guid: 54aa8eeba5031254c87208429a44d905, type: 3}
   shootOnPress: 1
 --- !u!114 &5951805605158596678
@@ -129,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff68f8a5f93e1674b8ce07f1cb50da1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startAudio: {fileID: 8300000, guid: b2841259c65f11745989bfebadb06946, type: 3}
   movement_speed: 4
 --- !u!50 &7646495782093802374
 Rigidbody2D:

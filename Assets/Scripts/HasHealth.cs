@@ -11,6 +11,8 @@ using UnityEngine;
 
 public class HasHealth : MonoBehaviour
 {
+    public AudioClip hurtAudio;
+
     public int currentHealth = 3;
 
     public static HasHealth instance;
@@ -54,6 +56,9 @@ public class HasHealth : MonoBehaviour
                 StartCoroutine(HealthFlash());
                 currentHealth--;
                 lostLife = true;
+
+                // Play sound effect at the location of the main camera
+                AudioSource.PlayClipAtPoint(hurtAudio, Camera.main.transform.position);
             }
         }
     }
