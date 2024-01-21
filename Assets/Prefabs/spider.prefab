@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e10cd99fd7c5ff41b38a13526794440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootAudio: {fileID: 8300000, guid: a2b7b1b4f98531e4cbe9798f35b982bf, type: 3}
+  shootAudio: {fileID: 8300000, guid: c1d1df0d1178c6848a33ca5756b1a0f8, type: 3}
   desiredProjectile: {fileID: 2640727809509795989, guid: 54aa8eeba5031254c87208429a44d905, type: 3}
   shootOnPress: 1
 --- !u!114 &5951805605158596678
